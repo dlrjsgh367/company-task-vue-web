@@ -1,10 +1,10 @@
 <template>
 <div class="container-common">
-    <div class="pv12 ph24">
-        <div class="box-flex">
-            <div class="ml-auto">dasd</div>
-            <div>dasd</div>
+    <div class="box-flex j-end gap8 h62 pr24">
+        <div class="pointer icon-ball-gray w26 h26">
+            <div class="has-notice">4</div>
         </div>
+        <div class="pointer icon-exit-blue"></div>
     </div>
 </div>
 </template>

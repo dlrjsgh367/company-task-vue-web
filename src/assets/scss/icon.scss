@@ -35,3 +35,30 @@
 .img-line-graph {
   background: url("@/assets/image/dashboard/imgLineGraph.png") center/contain no-repeat;
 }
+
+.icon-ball-gray {
+  background: url("@/assets/image/icon/iconBallGray.png") center/contain no-repeat;
+  position: relative;
+  .has-notice {
+    top: -6px;
+    right: -6px;
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border-radius: 100px;
+    background-color: #EA5455;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 13px;
+    color: #FFFFFF;
+  }
+}
+
+.icon-exit-blue {
+  width: 26.66px;
+  height: 22.5px;
+  background: url("@/assets/image/icon/iconExitBlue.png") center/contain no-repeat;
+}
