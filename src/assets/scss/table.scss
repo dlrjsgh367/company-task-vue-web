@@ -1,18 +1,22 @@
 .el-table {
+  /* === 공통 변수 설정 === */
   --el-table-border-color: #E8E9EB;
   --el-table-border: 1px solid #E8E9EB;
 
-  .el-table__header {
-    border-bottom: 1px solid #E8E9EB !important;
+  /* === 불필요한 가상요소 배경 제거 === */
+  &--border .el-table__inner-wrapper:after,
+  &--border:after,
+  &--border:before,
+  .el-table__inner-wrapper:before {
+    background-color: unset !important;
   }
 
-
-  /* 테이블 공통 셀 패딩 */
+  /* === 공통 셀 스타일 === */
   .el-table__cell {
     padding: unset !important;
   }
 
-  /* 헤더 영역 */
+  /* === 헤더 영역 === */
   .el-table__header-wrapper {
     th {
       height: 48px !important;
@@ -33,7 +37,7 @@
     }
   }
 
-  /* 바디 영역 */
+  /* === 바디 영역 === */
   .el-table__body-wrapper td.el-table__cell .cell {
     display: flex;
     justify-content: center;
@@ -41,10 +45,8 @@
     text-align: center !important;
   }
 
-
   .el-table__row {
     height: 60px !important;
-
 
     td.el-table__cell .cell {
       padding: unset !important;

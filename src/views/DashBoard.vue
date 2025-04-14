@@ -72,3 +72,9 @@ export default {
     }
 }
 </script>
+
+<!--<style>-->
+<!--.el-table td.el-table__cell, .el-table th.el-table__cell.is-leaf {-->
+<!--    border-bottom: unset !important;-->
+<!--}-->
+<!--</style>-->
