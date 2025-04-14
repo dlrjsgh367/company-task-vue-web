@@ -1,13 +1,12 @@
 <template>
-    <div>살려주세요 </div>
+    <div></div>
 </template>
 
 <script>
 export default {
-    name: "HelloWorld"
+    name: "DashBoard"
 }
 </script>
-
 
 <style scoped>
 
