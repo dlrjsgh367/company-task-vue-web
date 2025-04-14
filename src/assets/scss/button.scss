@@ -1,0 +1,22 @@
+.btn-default {
+  border-radius: 6px;
+  border: unset !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-blue {
+  @extend .btn-default;
+  background-color: #304FFD;
+}
+
+.btn-red {
+  @extend .btn-default;
+  background-color: #F32323;
+}
+
+.btn-primary {
+  @extend .btn-default;
+  background-color: #7367F0;
+}
