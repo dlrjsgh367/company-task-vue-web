@@ -88,6 +88,11 @@
     margin-top: #{$i}px !important;
   }
 
+  .mv#{$i} {
+    margin-top: #{$i}px !important;
+    margin-bottom: #{$i}px !important;
+  }
+
   .pb#{$i} {
     padding-bottom: #{$i}px !important;
   }
@@ -149,6 +154,10 @@
     flex: #{$i} !important;
 
   }
+
+  .rd#{$i} {
+    border-radius: #{$i}px !important;
+  }
 }
 
 .pointer {
@@ -156,5 +165,8 @@
 }
 
 .ml-auto {
+  margin-left: auto;
+}
+.mr-auto {
   margin-left: auto;
 }
