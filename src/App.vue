@@ -1,24 +1,25 @@
 <template>
-    <div class="container-top">
-        <RouterView></RouterView>
+    <div class="container-temp" :class="'bF0EDED'">
+        <div class="container-min">
+            <side-menu></side-menu>
+            <page-header></page-header>
+            <RouterView></RouterView>
+        </div>
     </div>
 </template>
 
 <script>
-
+import PageHeader from "@/views/PageHeader.vue";
+import SideMenu from "@/views/SideMenu.vue";
 export default {
     name: 'App',
+    components: {
+        PageHeader,
+        SideMenu,
+    }
 }
 </script>
 
 <style>
-.container-top {
-    z-index: 10;
-    position: fixed;
-    height: 100vh;
-    width: 100vw;
-    left: 0;
-    top: 0;
-    background-color: white;
-}
+@import "./assets/scss/index.css";
 </style>
