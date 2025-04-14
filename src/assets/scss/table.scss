@@ -1,0 +1,60 @@
+.el-table {
+  --el-table-border-color: #E8E9EB;
+  --el-table-border: 1px solid #E8E9EB;
+
+  .el-table__header {
+    border-bottom: 1px solid #E8E9EB !important;
+  }
+
+
+  /* 테이블 공통 셀 패딩 */
+  .el-table__cell {
+    padding: unset !important;
+  }
+
+  /* 헤더 영역 */
+  .el-table__header-wrapper {
+    th {
+      height: 48px !important;
+      border-top: 1px solid #E8E9EB !important;
+      background-color: #FCFCFD !important;
+    }
+
+    th.el-table__cell .cell {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: unset !important;
+      font-weight: 400;
+      font-size: 16px !important;
+      color: #4B465C !important;
+      border-right: unset !important;
+      text-align: center !important;
+    }
+  }
+
+  /* 바디 영역 */
+  .el-table__body-wrapper td.el-table__cell .cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center !important;
+  }
+
+
+  .el-table__row {
+    height: 60px !important;
+
+
+    td.el-table__cell .cell {
+      padding: unset !important;
+      font-weight: 400 !important;
+      font-size: 16px !important;
+      color: #5D586C !important;
+    }
+
+    &:hover > td {
+      background-color: #f5faff !important;
+    }
+  }
+}
