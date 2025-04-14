@@ -5,7 +5,7 @@
                 <div class="w173 pa8 bb-1d5-4B465C mb22">
                     <div class="fw600 fs20 c4B465C">이번주 공연 리스트</div>
                 </div>
-                <el-table :data="tableData" style="width: 100%">
+                <el-table :data="tableData" style="width: 100%" height="768">
                     <el-table-column prop="title" label="공연명" min-width="384"></el-table-column>
                     <el-table-column prop="venue" label="공연장" min-width="180"></el-table-column>
                     <el-table-column prop="date" label="공연날짜" min-width="180"></el-table-column>
