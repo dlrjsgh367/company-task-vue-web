@@ -1,0 +1,160 @@
+
+.box-flex {
+  display: flex;
+  align-items: center;
+
+  &.vertical {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  &.a-stretch {
+    align-items: stretch;
+  }
+
+  &.a-start {
+    align-items: start;
+  }
+
+  &.a-end {
+    align-items: flex-end;
+  }
+
+  &.a-center {
+    align-items: center;
+  }
+
+  &.j-center {
+    justify-content: center;
+  }
+
+  &.j-start {
+    justify-content: start;
+  }
+
+  &.j-end {
+    justify-content: end;
+  }
+}
+
+@for $i from 0 through 500 {
+  .w#{$i} {
+    width: #{$i}px !important;
+  }
+  .w#{$i}p {
+    width: calc($i * 1%) !important;
+  }
+  .h#{$i} {
+    height: #{$i}px !important;
+  }
+  .h#{$i}p {
+    height: calc($i * 1%) !important;
+  }
+  .left#{$i} {
+    left: #{$i}px !important;
+  }
+  .left#{$i}p {
+    left: calc($i * 1%) !important;
+  }
+  .right#{$i} {
+    right: #{$i}px !important;
+  }
+  .right#{$i}p {
+    right: calc($i * 1%) !important;
+  }
+  .top#{$i} {
+    top: #{$i}px !important;
+  }
+  .top#{$i}p {
+    top: calc($i * 1%) !important;
+  }
+  .bottom#{$i} {
+    bottom: #{$i}px !important;
+  }
+  .bottom#{$i}p {
+    bottom: calc($i * 1%) !important;
+  }
+
+  .mb#{$i} {
+    margin-bottom: #{$i}px !important;
+  }
+  .ml#{$i} {
+    margin-left: #{$i}px !important;
+  }
+  .mr#{$i} {
+    margin-right: #{$i}px !important;
+  }
+  .mt#{$i} {
+    margin-top: #{$i}px !important;
+  }
+
+  .pb#{$i} {
+    padding-bottom: #{$i}px !important;
+  }
+  .pl#{$i} {
+    padding-left: #{$i}px !important;
+  }
+  .pr#{$i} {
+    padding-right: #{$i}px !important;
+  }
+  .pt#{$i} {
+    padding-top: #{$i}px !important;
+  }
+
+  .pv#{$i} {
+    padding-top: #{$i}px !important;
+    padding-bottom: #{$i}px !important;
+  }
+
+  .ph#{$i} {
+    padding-left: #{$i}px !important;
+    padding-right: #{$i}px !important;
+  }
+
+  .pa#{$i} {
+    padding: #{$i}px !important;
+  }
+
+  .gap#{$i} {
+    gap: #{$i}px !important;
+  }
+
+  .right#{$i} {
+    right: #{$i}px !important;
+
+  }
+
+  .fs#{$i} {
+    font-size: #{$i}px !important;
+
+  }
+  .fw#{$i} {
+    font-weight: #{$i} !important;
+
+  }
+  .mh#{$i} {
+    min-height: #{$i}px !important;
+
+  }
+
+  .fs-#{$i} {
+    flex-shrink: #{$i} !important;
+
+  }
+  .fg-#{$i} {
+    flex-grow: #{$i} !important;
+
+  }
+  .flex-#{$i} {
+    flex: #{$i} !important;
+
+  }
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
