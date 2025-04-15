@@ -10,6 +10,14 @@
 .container-min {
   min-width: 1280px;
   padding: 20px 40px 0 270px;
+
+  &.login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
+    padding: unset;
+  }
 }
 
 .container-common {
@@ -17,4 +25,16 @@
   box-shadow: 0 2px 4px rgba(165, 163, 174, 0.3);
   border-radius: 6px;
   position: relative;
+}
+
+.copy-right {
+  padding: 21.5px 0;
+  font-weight: 400;
+  font-size: 18px;
+  color: #6F6B7D;
+  text-align: center;
+  &.login {
+    position: fixed;
+    bottom: 0
+  }
 }

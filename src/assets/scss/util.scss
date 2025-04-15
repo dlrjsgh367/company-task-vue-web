@@ -37,7 +37,7 @@
   }
 }
 
-@for $i from 0 through 500 {
+@for $i from 0 through 1000 {
   .w#{$i} {
     width: #{$i}px !important;
   }
@@ -137,6 +137,10 @@
     font-weight: #{$i} !important;
 
   }
+  .maw#{$i} {
+    max-width: #{$i}px !important;
+
+  }
   .mh#{$i} {
     min-height: #{$i}px !important;
 
@@ -169,4 +173,8 @@
 }
 .mr-auto {
   margin-left: auto;
+}
+
+.ta-c {
+text-align: center;
 }
