@@ -1,8 +1,8 @@
 <template>
     <div class="container-temp" :class="'bF0EDED'">
-        <div class="container-min">
-            <side-menu></side-menu>
-            <page-header></page-header>
+        <div class="container-min" :class="{'login' : $route.path === '/login'}">
+            <side-menu v-if="$route.path !== '/login'"></side-menu>
+            <page-header v-if="$route.path !== '/login'"></page-header>
             <RouterView></RouterView>
         </div>
     </div>
